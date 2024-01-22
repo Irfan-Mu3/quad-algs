@@ -78,7 +78,7 @@ if __name__ == '__main__':
     # step: WLS
     import wls_method
 
-    wls_w = wls_method.create_wls_weights(N - 1,NC_d,C=2.5)  # remember: because m =N-1
+    wls_w = wls_method.create_wls_weights(N - 1, NC_d, C=2.5)  # remember: because m =N-1
     print("Done WLS")
 
     # step: barycentric
