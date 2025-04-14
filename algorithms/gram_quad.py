@@ -8,9 +8,9 @@ https://arxiv.org/abs/2106.14875.
 
 def create_gram_weights(m):
     """
-    : param m : the degree of the l a r g e s t p o s s i b l e Gram p o l y n o m i a l
+    : param m : the degree of the largest possible Gram polynomial
     for m + 1 points .
-    : return : gram w e i g h t s for gram q u a d r a t u r e of m + 1 points .
+    : return : gram weights for gram quadrature of m + 1 points .
     """
     max_d = int(np.sqrt(m))
     xs = np.linspace(-1, 1, m + 1)
@@ -62,9 +62,9 @@ if __name__ == '__main__':
     m = 100
     xs = np.linspace(-1, 1, m + 1)
     gram_weights = create_gram_weights(m)
-    # the sum of stable w e i g h t s is equal to 2 .
+    # the sum of stable weights is equal to 2 .
     print(" Sum of Gram weights :", sum(gram_weights))
-    # test integration , i n t e g r a t e f below b e t w e e n [ -1 , 1 ]
+    # test integration , integrate f below between [ -1 , 1 ]
 
     a, b = -1, 1
     f = lambda x: 9 * x ** 2 + 45 * 13 * x ** 3 + 16 * x ** 4
